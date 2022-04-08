@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            SELETORES PERSONALIZADOS
+            #  = Id
+            .  = Class
+            :  = Pseudo-Class
+            :: = Pseudo-Element
+            >  = Children
+        */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(235, 125, 125);
+        }
+        .especial::before {
+            content: '⇉ ';
+        }
+
+        .especial::after {
+            content: ' ⇇';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100008071306755" target="_blank" rel="external">Facebook</a></li>
+        <li><a href="https://www.youtube.com/channel/UCMNpB0THFQDQZP0MAJUZerg" target="_blank" rel="external" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.instagram.com/adrian_amaral223/?hl=pt-br" target="_blank" rel="external" class="especial">Instagram</a></li>
+    </ul>
+</body>
+</html>
